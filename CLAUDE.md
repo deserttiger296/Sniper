@@ -18,3 +18,9 @@ Nicel (quant) motor artık `python_bot/` altında konsolide edilmiş durumda (es
 * Motoru başlatmak için: `python_bot/.venv/Scripts/python.exe -m uvicorn main:app --port 8000` (python_bot/ içinden).
 * Eşbütünleşme testi: `GET /api/cointegration?asset_a=GARAN&asset_b=AKBNK` (veya Next.js üzerinden `/api/bist/cointegration`).
 * Rejim tespiti: `GET /api/regime?symbol=XU100.IS`.
+
+## Pro Kota ve Token Disiplini
+- Geniş çaplı dosya aramalarını kendin yapma, `@agent-scout` ajanına devret.
+- Test ve build çalıştırırken `@agent-test-runner` ajanını kullan.
+- Bir dosyayı okurken tamamını okumak yerine sadece ilgili satır aralıklarını oku.
+- `node_modules`, `dist`, `build`, `.next`, `.git`, `venv`, `bin`, `obj` ve `*.lock` dosyalarını asla okuma.
